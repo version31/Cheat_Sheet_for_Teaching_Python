@@ -85,24 +85,82 @@ print(txt.find("q"))  # // -1
 print(txt.index("q"))  # // error
 
 txt.isalnum()
+# string.isalnum():bool
+
 txt.isalpha()
+# string.isalpha():bool
+
 txt.isdecimal()
+# string.isdecimal():bool
+# a = "\u0030" #unicode for 0
+# b = "\u0047" #unicode for G
+# print(a.isdecimal())
+# print(b.isdecimal())
+
 txt.isdigit()
+# string.isdigit():bool
+# a = "\u0030" #unicode for 0
+# b = "\u00B2" #unicode for ²
+# print(a.isdigit())
+# print(b.isdigit())
+
 txt.isidentifier()
+# string.isidentifier():bool
+
 txt.islower()
+# string.islower():bool
+
 txt.isnumeric()
+# string.isnumeric():bool
+
 txt.isprintable()
+# string.isprintable():bool txt = "Hello!\nAre you #1?" \\ false "\n"
+
 txt.isspace()
+# string.isspace():bool
+
 txt.istitle()
+# Check if each word start with an upper case letter:
+
 txt.isupper()
+
 txt.join()
+# string.join(iterable)
+# Note: When using a dictionary as an iterable, the returned values are the keys, not the values.
+# myTuple = {"John", "Peter", "Vicky"}
+# x = "#".join(myTuple)
+# print(x)  # // John#Vicky#Peter
+
 txt.ljust()
+# string.ljust(length, character)
+# txt = "banana"
+# x = txt.ljust(20, "O")
+# print(x)
+
 txt.lower()
+# string.lower()
+
 txt.lstrip()
+# string.lstrip(characters)
+# txt = ",,,,,ssaaww.....banana"
+# x = txt.lstrip(",.asw")
+# print(x)
+
 txt.maketrans()
+
 txt.partition()
+# Note: This method search for the first occurrence of the specified string.
+# txt = "I could eat bananas all day"
+# x = txt.partition("bananas")
+# print(x) #('I could eat ', 'bananas', ' all day')
+
 txt.replace()
+# txt = "one one was a race horse, two two was one too."
+# x = txt.replace("one", "three", 2)
+# print(x)
+
 txt.rfind()
+
 txt.rindex()
 txt.rjust()
 txt.rpartition()

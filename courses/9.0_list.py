@@ -55,6 +55,13 @@ list2 = [1, 2, 3]
 
 list3 = list1 + list2
 
-# another way
+# another ways
 for x in list2:
     list1.append(x)
+
+list1.extend(list2)
+print(list1)
+
+# The list() Constructor
+thislist = list(("apple", "banana", "cherry"))
+print(thislist)

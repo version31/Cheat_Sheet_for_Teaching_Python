@@ -4,6 +4,11 @@
 # Set is a collection which is unordered and unindexed. No duplicate members.
 # Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
 
+# round bracket ()
+# square bracket []
+# curly brace {}
+
+
 list = ["apple", "banana", "cherry"]
 print(list)
 print(list[1])

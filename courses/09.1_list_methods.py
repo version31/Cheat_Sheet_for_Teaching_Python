@@ -1,4 +1,21 @@
-# append()    
+list = [1, 2, 3, 49, -4, 0]
+
+list.sort()  # Sorts the list
+list.reverse()  # Reverses the order of the list
+list.append(66)  # Adds an element at the end of the list
+new_list = list.copy()  # Returns a copy of the list
+list.count(1)  # Returns the number of elements with the specified value
+list.extend([])  # Add the elements of a list (or any iterable), to the end of the current list
+print(list.index(-4))  # Returns the index of the first element with the specified value
+list.insert(0, 90)  # Adds an element at the specified position
+list.pop(2)  # Removes the element at the specified position
+list.remove(-4)  # Removes the item with the specified value
+list.clear()  # Removes all the elements from the list
+
+
+
+
+# append()
 # Adds an element at the end of the list
 a = ["apple", "banana", "cherry"]
 b = ["Ford", "BMW", "Volvo"]
